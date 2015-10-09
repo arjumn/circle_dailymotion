@@ -1,0 +1,51 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.wrapper:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.wrapper .child {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.wrapper .child.initial {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.wrapper .child .item {
+  width: 50%;
+  height: 100%;
+}
+
+.wrapper .child:first-child {
+  background: red;
+}
+
+.wrapper .child:nth-child(2) {
+  background: blue;
+}
+
+.wrapper .child:nth-child(3) {
+  background: green;
+}
+
+.wrapper .child:last-child {
+  background: yellow;
+}
